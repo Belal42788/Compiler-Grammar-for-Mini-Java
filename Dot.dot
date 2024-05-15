@@ -1,0 +1,241 @@
+digraph {
+
+	ordering=out;
+	ranksep=.4;
+	bgcolor="lightgrey"; node [shape=box, fixedsize=false, fontsize=12, fontname="Helvetica-bold", fontcolor="blue"
+		width=.25, height=.25, color="black", fillcolor="white", style="filled, solid, bold"];
+	edge [arrowsize=.5, color="black", style="bold"]
+
+  n0 [label="Start"];
+  n1 [label="Goal"];
+  n1 [label="Goal"];
+  n2 [label="MainClass"];
+  n2 [label="MainClass"];
+  n3 [label="class"];
+  n4 [label="Factorial"];
+  n5 [label="{"];
+  n6 [label="public"];
+  n7 [label="static"];
+  n8 [label="void"];
+  n9 [label="main"];
+  n10 [label="("];
+  n11 [label="String"];
+  n12 [label="["];
+  n13 [label="]"];
+  n14 [label="a"];
+  n15 [label=")"];
+  n16 [label="{"];
+  n17 [label="Print"];
+  n17 [label="Print"];
+  n18 [label="System.out.println"];
+  n19 [label="("];
+  n20 [label="Term"];
+  n20 [label="Term"];
+  n21 [label="new"];
+  n22 [label="Fac"];
+  n23 [label="("];
+  n24 [label=")"];
+  n25 [label="."];
+  n26 [label="ComputeFac"];
+  n27 [label="("];
+  n28 [label="Term"];
+  n28 [label="Term"];
+  n29 [label="10"];
+  n30 [label=")"];
+  n31 [label=")"];
+  n32 [label=";"];
+  n33 [label="}"];
+  n34 [label="}"];
+  n35 [label="ClassDeclaration"];
+  n35 [label="ClassDeclaration"];
+  n36 [label="class"];
+  n37 [label="Fac"];
+  n38 [label="{"];
+  n39 [label="MethodDeclaration"];
+  n39 [label="MethodDeclaration"];
+  n40 [label="public"];
+  n41 [label="int"];
+  n42 [label="ComputeFac"];
+  n43 [label="("];
+  n44 [label="int"];
+  n45 [label="num"];
+  n46 [label=")"];
+  n47 [label="{"];
+  n48 [label="VarDeclaration"];
+  n48 [label="VarDeclaration"];
+  n49 [label="int"];
+  n50 [label="num_aux"];
+  n51 [label=";"];
+  n52 [label="If"];
+  n52 [label="If"];
+  n53 [label="if"];
+  n54 [label="("];
+  n55 [label="Term"];
+  n55 [label="Term"];
+  n56 [label="num"];
+  n57 [label="<"];
+  n58 [label="Term"];
+  n58 [label="Term"];
+  n59 [label="1"];
+  n60 [label=")"];
+  n61 [label="Assignment"];
+  n61 [label="Assignment"];
+  n62 [label="num_aux"];
+  n63 [label="="];
+  n64 [label="Term"];
+  n64 [label="Term"];
+  n65 [label="1"];
+  n66 [label=";"];
+  n67 [label="else"];
+  n68 [label="Assignment"];
+  n68 [label="Assignment"];
+  n69 [label="num_aux"];
+  n70 [label="="];
+  n71 [label="Term"];
+  n71 [label="Term"];
+  n72 [label="1"];
+  n73 [label=";"];
+  n74 [label="VarDeclaration"];
+  n74 [label="VarDeclaration"];
+  n75 [label="num_"];
+  n76 [label="aux"];
+  n77 [label="Assignment"];
+  n77 [label="Assignment"];
+  n78 [label="Identifier"];
+  n79 [label="="];
+  n80 [label="Term"];
+  n80 [label="Term"];
+  n81 [label="num"];
+  n82 [label="*"];
+  n83 [label="Term"];
+  n83 [label="Term"];
+  n84 [label="("];
+  n85 [label="Term"];
+  n85 [label="Term"];
+  n86 [label="this"];
+  n87 [label="."];
+  n88 [label="ComputeFac"];
+  n89 [label="("];
+  n90 [label="Term"];
+  n90 [label="Term"];
+  n91 [label="num"];
+  n92 [label="-"];
+  n93 [label="Term"];
+  n93 [label="Term"];
+  n94 [label="1"];
+  n95 [label=")"];
+  n96 [label=")"];
+  n97 [label=";"];
+  n98 [label="return"];
+  n99 [label="Term"];
+  n99 [label="Term"];
+  n100 [label="d"];
+  n101 [label=";"];
+  n102 [label="}"];
+  n103 [label="}"];
+
+  n0 -> n1 // "Start" -> "Goal"
+  n1 -> n2 // "Goal" -> "MainClass"
+  n2 -> n3 // "MainClass" -> "class"
+  n2 -> n4 // "MainClass" -> "Factorial"
+  n2 -> n5 // "MainClass" -> "{"
+  n2 -> n6 // "MainClass" -> "public"
+  n2 -> n7 // "MainClass" -> "static"
+  n2 -> n8 // "MainClass" -> "void"
+  n2 -> n9 // "MainClass" -> "main"
+  n2 -> n10 // "MainClass" -> "("
+  n2 -> n11 // "MainClass" -> "String"
+  n2 -> n12 // "MainClass" -> "["
+  n2 -> n13 // "MainClass" -> "]"
+  n2 -> n14 // "MainClass" -> "a"
+  n2 -> n15 // "MainClass" -> ")"
+  n2 -> n16 // "MainClass" -> "{"
+  n2 -> n17 // "MainClass" -> "Print"
+  n17 -> n18 // "Print" -> "System.out.println"
+  n17 -> n19 // "Print" -> "("
+  n17 -> n20 // "Print" -> "Term"
+  n20 -> n21 // "Term" -> "new"
+  n20 -> n22 // "Term" -> "Fac"
+  n20 -> n23 // "Term" -> "("
+  n20 -> n24 // "Term" -> ")"
+  n20 -> n25 // "Term" -> "."
+  n20 -> n26 // "Term" -> "ComputeFac"
+  n20 -> n27 // "Term" -> "("
+  n20 -> n28 // "Term" -> "Term"
+  n28 -> n29 // "Term" -> "10"
+  n20 -> n30 // "Term" -> ")"
+  n17 -> n31 // "Print" -> ")"
+  n17 -> n32 // "Print" -> ";"
+  n2 -> n33 // "MainClass" -> "}"
+  n2 -> n34 // "MainClass" -> "}"
+  n1 -> n35 // "Goal" -> "ClassDeclaration"
+  n35 -> n36 // "ClassDeclaration" -> "class"
+  n35 -> n37 // "ClassDeclaration" -> "Fac"
+  n35 -> n38 // "ClassDeclaration" -> "{"
+  n35 -> n39 // "ClassDeclaration" -> "MethodDeclaration"
+  n39 -> n40 // "MethodDeclaration" -> "public"
+  n39 -> n41 // "MethodDeclaration" -> "int"
+  n39 -> n42 // "MethodDeclaration" -> "ComputeFac"
+  n39 -> n43 // "MethodDeclaration" -> "("
+  n39 -> n44 // "MethodDeclaration" -> "int"
+  n39 -> n45 // "MethodDeclaration" -> "num"
+  n39 -> n46 // "MethodDeclaration" -> ")"
+  n39 -> n47 // "MethodDeclaration" -> "{"
+  n39 -> n48 // "MethodDeclaration" -> "VarDeclaration"
+  n48 -> n49 // "VarDeclaration" -> "int"
+  n48 -> n50 // "VarDeclaration" -> "num_aux"
+  n48 -> n51 // "VarDeclaration" -> ";"
+  n39 -> n52 // "MethodDeclaration" -> "If"
+  n52 -> n53 // "If" -> "if"
+  n52 -> n54 // "If" -> "("
+  n52 -> n55 // "If" -> "Term"
+  n55 -> n56 // "Term" -> "num"
+  n52 -> n57 // "If" -> "<"
+  n52 -> n58 // "If" -> "Term"
+  n58 -> n59 // "Term" -> "1"
+  n52 -> n60 // "If" -> ")"
+  n52 -> n61 // "If" -> "Assignment"
+  n61 -> n62 // "Assignment" -> "num_aux"
+  n61 -> n63 // "Assignment" -> "="
+  n61 -> n64 // "Assignment" -> "Term"
+  n64 -> n65 // "Term" -> "1"
+  n61 -> n66 // "Assignment" -> ";"
+  n52 -> n67 // "If" -> "else"
+  n52 -> n68 // "If" -> "Assignment"
+  n68 -> n69 // "Assignment" -> "num_aux"
+  n68 -> n70 // "Assignment" -> "="
+  n68 -> n71 // "Assignment" -> "Term"
+  n71 -> n72 // "Term" -> "1"
+  n68 -> n73 // "Assignment" -> ";"
+  n39 -> n74 // "MethodDeclaration" -> "VarDeclaration"
+  n74 -> n75 // "VarDeclaration" -> "num_"
+  n74 -> n76 // "VarDeclaration" -> "aux"
+  n74 -> n77 // "VarDeclaration" -> "Assignment"
+  n77 -> n78 // "Assignment" -> "Identifier"
+  n77 -> n79 // "Assignment" -> "="
+  n77 -> n80 // "Assignment" -> "Term"
+  n80 -> n81 // "Term" -> "num"
+  n77 -> n82 // "Assignment" -> "*"
+  n77 -> n83 // "Assignment" -> "Term"
+  n83 -> n84 // "Term" -> "("
+  n83 -> n85 // "Term" -> "Term"
+  n85 -> n86 // "Term" -> "this"
+  n85 -> n87 // "Term" -> "."
+  n85 -> n88 // "Term" -> "ComputeFac"
+  n85 -> n89 // "Term" -> "("
+  n85 -> n90 // "Term" -> "Term"
+  n90 -> n91 // "Term" -> "num"
+  n85 -> n92 // "Term" -> "-"
+  n85 -> n93 // "Term" -> "Term"
+  n93 -> n94 // "Term" -> "1"
+  n85 -> n95 // "Term" -> ")"
+  n83 -> n96 // "Term" -> ")"
+  n74 -> n97 // "VarDeclaration" -> ";"
+  n39 -> n98 // "MethodDeclaration" -> "return"
+  n39 -> n99 // "MethodDeclaration" -> "Term"
+  n99 -> n100 // "Term" -> "d"
+  n39 -> n101 // "MethodDeclaration" -> ";"
+  n39 -> n102 // "MethodDeclaration" -> "}"
+  n35 -> n103 // "ClassDeclaration" -> "}"
+
+}
